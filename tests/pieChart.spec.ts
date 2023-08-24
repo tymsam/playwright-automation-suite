@@ -10,7 +10,7 @@ test.describe('Tests for Module 3: Pie Chart', () => {
 		page,
 	}) => {
 		test.slow();
-		const timeout = 20;
+		const timeout = 20; // try increasing if test fails
 		page.getByText('Performance and sales').click();
 		await expect(page).toHaveURL(
 			'https://telerik.github.io/react-admin-dashboard/#/home/performance-and-sales'
