@@ -10,6 +10,7 @@ test.describe('Tests for Module 3: Pie Chart', () => {
 		page,
 	}) => {
 		test.slow();
+		const timeout = 20;
 		page.getByText('Performance and sales').click();
 		await expect(page).toHaveURL(
 			'https://telerik.github.io/react-admin-dashboard/#/home/performance-and-sales'
@@ -76,7 +77,6 @@ test.describe('Tests for Module 3: Pie Chart', () => {
 				}
 				arrayBinary[indexDecimal] = indexBinary.split('');
 			}
-			// console.log('Binary array complete');
 		}
 
 		async function enableCategory(index: number) {
@@ -89,7 +89,7 @@ test.describe('Tests for Module 3: Pie Chart', () => {
 			// 		') to enable'
 			// );
 			await categorySelector[index].click();
-			await page.waitForTimeout(20);
+			await page.waitForTimeout(timeout);
 			pieElemnts = await page
 				.locator('g:nth-child(6) > g > g > path:nth-child(1)')
 				.all();
@@ -110,7 +110,7 @@ test.describe('Tests for Module 3: Pie Chart', () => {
 			// 		') to disable'
 			// );
 			await categorySelector[index].click();
-			await page.waitForTimeout(20);
+			await page.waitForTimeout(timeout);
 
 			pieElemnts = await page
 				.locator('g:nth-child(6) > g > g > path:nth-child(1)')
