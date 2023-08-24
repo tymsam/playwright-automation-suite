@@ -31,12 +31,6 @@ cd playwright-automation-suite
 npm install
 ```
 
-4. Update PLaywright browsers using:
-
-```
-npx playwright install
-```
-
 ## Running the Automation Suite
 
 You can run the automation suite with the following command:
@@ -46,6 +40,12 @@ npx playwright test
 ```
 
 This command will execute the test scripts using Playwright and generate relevant reports and outputs.
+
+If needed update Playwright browsers using:
+
+```
+npx playwright install
+```
 
 ## Test Scenarios
 
