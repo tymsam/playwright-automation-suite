@@ -16,7 +16,7 @@ Follow these steps to set up the automation suite:
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/playwright-automation-suite.git
+git clone https://github.com/tymsam/playwright-automation-suite.git
 ```
 
 2. Navigate to the project directory:
